@@ -4,6 +4,7 @@ import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-re
 import './Home.css';
 import Navbar from "./Navbar.tsx";
 import { useUser } from "@clerk/clerk-react";
+import Login from './Login.tsx';
 
 const Home = () => {
     const {user} = useUser();
@@ -36,12 +37,7 @@ const Home = () => {
                 
             </SignedIn> 
             <SignedOut>
-                <h1 className="text-4xl text-center">Welcome to Skibidi!</h1>
-                <h2 className="text-2xl text-center">Please sign in or sign up to continue</h2>
-                <div className="flex justify-center space-x-4">
-                    <SignUpButton />
-                    <SignInButton />
-                </div>
+                <Login />
             </SignedOut>
         </div>
     )
