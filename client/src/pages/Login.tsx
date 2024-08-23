@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Login.css";
 import { SignInButton, SignUpButton } from "@clerk/clerk-react";
-import app_logo from "../assets/logo-app.png";
+import app_logo from "../assets/logo-app (2).png";
 
 const Login = () => {
     return (

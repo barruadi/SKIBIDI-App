@@ -9,11 +9,11 @@ import Login from './Login.tsx';
 const Home = () => {
     const {user} = useUser();
     return (
-        <div>
+        <div className="home-container">
             <SignedIn>
                 <Navbar />
 
-                <div className="p-4 space-y-4" style = {{paddingTop:"6vh"}}>
+                <div className="p-4 space-y-4" style = {{paddingTop:"8vh"}}>
                     <div className="box">
                         <h1> Hello {user?.firstName} </h1>
                         <h2 className="text-lg font-semibold">Your Wallet:</h2>
