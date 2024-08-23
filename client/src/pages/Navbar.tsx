@@ -14,16 +14,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="Navbar">
+    <nav className="Navbar drop-shadow-lg">
       <div className="mx-auto" style={{ maxWidth: '95vw', paddingLeft: '4vw', paddingRight: '4vw', fontWeight:"bolder"}}>
-        <div className="flex items-center justify-between" style={{ height: '6vh' }}>
+        <div className="flex items-center justify-between" style={{ height: '7vh' }}>
           <div className="flex items-center">
             <div className="text-black font-bold" style={{ fontSize: '2.5vh' }}>
               <div className="clickable-div" onClick={skibidi_button}>
                 <img
                   src = {app_logo}
                   alt="logo"
-                  style={{ height: '6.5vh', width: '6.5vh' }}
+                  style={{ height: '7vh', width: '7vh' }}
                 />
               </div>
             </div>

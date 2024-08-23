@@ -13,21 +13,28 @@ const Home = () => {
             <SignedIn>
                 <Navbar />
 
-                <div className="p-4 space-y-4" style = {{paddingTop:"8vh"}}>
-                    <div className="box">
+                <div className="p-4 space-y-4" style = {{paddingTop:"8.5vh"}}>
+                    <div className="box-1">
                         <h1> Hello {user?.firstName} </h1>
                         <h2 className="text-lg font-semibold">Your Wallet:</h2>
                         <p className="text-2xl">Rp </p>
                     </div>
                     <div className="grid grid-cols-2 gap-4 w-full">
-                        <div className="box">
-                            <p>Grafik</p>
+                        <div className="box-2">
+                            <p>This Month Income</p>
                         </div>
-                        <div className="box">
-                            <p>Leaderboard</p>
+                        <div className="box-3">
+                            <p>This Month Outcome</p>
                         </div>
                     </div>
-                    <div className="box">
+                    <div className="box-4">
+                    <h2 className="text-lg font-semibold pb-2">My Income Today</h2>
+                        <Link to='/transaction' className="bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center">
+                        +
+                        </Link>
+                    </div>
+
+                    <div className="box-5">
                     <h2 className="text-lg font-semibold pb-2">My Income Today</h2>
                         <Link to='/transaction' className="bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center">
                         +
