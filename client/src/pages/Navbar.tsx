@@ -39,8 +39,7 @@ const Navbar = () => {
             <pre>
               Created by :
               <br></br>
-              M.Fariz Rifqi R. (19623233)
-              <br></br>
+              M.Fariz Rifqi R. (19623233) <br></br>
               Barru Adi U (19623079) <br></br>
               Andrew Isra S. D (19623017) <br></br>
               M. Raihan Nazhim O. (19623215) <br></br>
