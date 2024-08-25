@@ -3,23 +3,24 @@ import { Link } from "react-router-dom";
 import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-react";
 import './Home.css';
 import Navbar from "./Navbar.tsx";
+import TransactionButton from "../components/transaction-button.tsx";
 import { useUser } from "@clerk/clerk-react";
 import Login from './Login.tsx';
-import logo1 from "../assets/logo-food.png"
-import logo2 from "../assets/logo-transport.png"
-import logo3 from "../assets/logo-other.png"
-import logo4 from "../assets/logo-education.png"
-import logo5 from "../assets/logo-entertainment.png"
+// import logo1 from "../assets/logo-food.png"
+// import logo2 from "../assets/logo-transport.png"
+// import logo3 from "../assets/logo-other.png"
+// import logo4 from "../assets/logo-education.png"
+// import logo5 from "../assets/logo-entertainment.png"
 import grafik from "../assets/grafik.png"
 import leaderboard from "../assets/leaderboard.png"
 
 const Home = () => {
     const {user} = useUser();
     return (
-        <div className="home-container">
+        <div className="home-container h-full">
             <SignedIn>
                 <Navbar />
-
+                <TransactionButton/>
                 <div className="p-4 space-y-4" style = {{paddingTop:"8.5vh"}}>
                     <div className="box-1 text-white font-semibold">
                         <h1> Hello, Raihan {user?.firstName} </h1>
@@ -61,7 +62,7 @@ const Home = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="box-6 pb-6">
+                    {/* <div className="box-6 pb-6">
                         <h2 className="text-2xl text-custom-color font-bold text-center pb-6">My Spending</h2>
                         <div className="flex justify-center pb-6">
                             <div className="flex flex-col items-center">
@@ -117,8 +118,10 @@ const Home = () => {
                                 <h1 className="text-black font-bold">Entertainment</h1>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <TransactionButton/>
                 </div>
+            
                 
             </SignedIn> 
             <SignedOut>
