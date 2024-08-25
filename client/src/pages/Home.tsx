@@ -26,7 +26,7 @@ const Home = () => {
                         <h1> Hello, Raihan {user?.firstName} </h1>
                         <p className="text-4xl text-custom-color font-semibold">My Wallet</p>
                         <p className="text-2xl font-semibold pb-2">Rp 3.242.500,00</p>
-                        <h2 className="text-xs text-custom-color font-semibold">Expected Monthly Saving: Rp 500.000,00</h2>
+                        <h2 className="text-xs text-custom-color font-semibold">masih dalam proses penyambungan back-end :)</h2>
                     </div>
                     <div className="grid grid-cols-2 gap-4 w-full">
                         <div className="box-2">
