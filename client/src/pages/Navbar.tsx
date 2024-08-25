@@ -19,12 +19,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between" style={{ height: '7vh' }}>
           <div className="flex items-center">
             <div className="text-black font-bold" style={{ fontSize: '2.5vh' }}>
-              <div className="clickable-div" onClick={skibidi_button}>
+              <div className="clickable-div text-skibidi-color flex items-center" onClick={skibidi_button}> 
                 <img
                   src = {app_logo}
                   alt="logo"
                   style={{ height: '7vh', width: '7vh' }}
-                />
+                /> SKIBIDI
               </div>
             </div>
           </div>
