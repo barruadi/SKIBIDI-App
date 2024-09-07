@@ -8,7 +8,6 @@ export interface FinancialRecord {
   description: string;
   amount: number;
   category: string;
-  paymentMethod: string;
 }
 
 interface FinancialRecordsContextType {

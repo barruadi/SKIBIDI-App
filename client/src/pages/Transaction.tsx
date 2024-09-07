@@ -1,31 +1,28 @@
 import { useState } from "react";
 import { useUser } from "@clerk/clerk-react";
-import { useFinancialRecords } from "../contexts/financial-record-contect";
-import { Link, useNavigate } from 'react-router-dom';
+import { useFinancialRecords } from "../contexts/financial-record-context";
+import { Link } from 'react-router-dom';
 
-const FinancialRecordForm = () => {
+export const FinancialRecordForm = () => {
   const [description, setDescription] = useState<string>("");
   const [amount, setAmount] = useState<string>("");
   const [category, setCategory] = useState<string>("");
-//   const { addRecord } = useFinancialRecords();
-//   const navigate = useNavigate()
-//   const submitRecord = () =>{
-//     navigate('/')
-//   }
+  const { addRecord } = useFinancialRecords();
+  
   const { user } = useUser();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    // const newRecord = {
-    //   userId: user?.id ?? "",
-    //   date: new Date(),
-    //   description: description,
-    //   amount: parseFloat(amount),
-    //   category: category,
-    // };
+    const newRecord = {
+      userId: user?.id ?? "",
+      date: new Date(),
+      description: description,
+      amount: parseFloat(amount),
+      category: category,
+    };
 
-    // addRecord(newRecord);
+    addRecord(newRecord);
     setDescription("");
     setAmount("");
     setCategory("");
@@ -83,6 +80,3 @@ const FinancialRecordForm = () => {
     </div>
   );
 };
-
-
-export default FinancialRecordForm
