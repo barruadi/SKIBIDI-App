@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import React from "react";
 import logo from "../assets/logo-itb.png"
 
 const Header = () => {
@@ -11,7 +10,6 @@ const Header = () => {
             src={logo} alt="Logo" className="h-8 w-8" />
           </Link>
         </div>
-
         <div className="flex items-center">
           <Link to='/profile' className='flex items-center'><img
             src={logo}
